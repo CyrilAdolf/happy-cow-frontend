@@ -1,0 +1,31 @@
+.searchBarHome {
+  display: flex;
+  flex-direction: row;
+}
+.searchBarHome > input {
+  font-family: "Nunito";
+  font-size: 1.2rem;
+  height: 50px;
+  width: 500px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid lightgray;
+  padding-left: 10px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+.searchBarHome > button {
+  width: 50px;
+  height: 50px;
+  background-color: #7c4ec3;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.searchBarHome .icon {
+  height: 20px;
+  color: white;
+}

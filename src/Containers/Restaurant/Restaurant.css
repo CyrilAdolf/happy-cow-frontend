@@ -1,0 +1,223 @@
+.width {
+  /* background-color: #22820e; */
+  height: 100px;
+}
+.title {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.columnG {
+  width: 70%;
+  padding: 10px;
+}
+.columnG .name {
+  color: white;
+  font-size: 36px;
+  width: 100%;
+}
+.columnG .info {
+  display: flex;
+  align-items: center;
+}
+.info > div {
+  margin: 15px;
+}
+.type {
+  background-color: white;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+.type img {
+  height: 20px;
+  width: 20px;
+}
+.type span {
+  font-family: "NunitoBold";
+}
+.rating {
+  color: gold;
+}
+.columnD {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.columnD > div {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 66%;
+}
+.columnD > div > .icon {
+  background-color: white;
+  color: #7c4ec3;
+  padding: 15px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+.restaurant {
+  display: flex;
+}
+.main {
+  width: 800px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+.location span {
+  font-family: "NunitoBold";
+}
+.mainInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.mainInfo > div {
+  /* border: red 1px solid; */
+  width: 250px;
+  height: 80px;
+  margin: 15px;
+
+  display: flex;
+  align-items: center;
+}
+.mainInfo .icon {
+  display: inline-block;
+  width: 50px;
+  font-size: 30px;
+  color: #6d6a6a;
+}
+.main > .description {
+  line-height: 1.5rem;
+  color: #444;
+}
+.optionsPhotos {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.optionsPhotos > div {
+  display: flex;
+}
+.optionsPhotos .icon {
+  margin-right: 10px;
+}
+.optionsPhotos > div > div {
+  margin-right: 20px;
+  height: 50px;
+  width: 140px;
+  background-color: #7c4ec3;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "NunitoBold";
+  border-radius: 10px;
+}
+.numberPhotos .icon {
+  height: 18px;
+  color: #7c4ec3;
+  margin-left: 10px;
+}
+.main > .carousel {
+  display: flex;
+  overflow-x: scroll;
+}
+.restaurantSlide {
+  object-fit: cover;
+  object-position: center;
+  margin-right: 10px;
+  width: 210px;
+  height: 200px;
+  border-radius: 20px;
+}
+.reviews {
+  margin-top: 235px;
+}
+.titleReview {
+  font-family: "NunitoBold";
+  font-size: 30px;
+}
+.aside {
+  width: 400px;
+  padding: 0 15px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 15px;
+}
+.map {
+  height: 200px;
+  width: 150px;
+  margin-bottom: 30px;
+}
+.details > div {
+  display: flex;
+  margin-bottom: 10px;
+}
+.details > div > div:first-child {
+  width: 150px;
+  font-family: "NunitoBold";
+}
+/* PRICE */
+.Inexpensive > .icon {
+  color: grey;
+}
+.Inexpensive > .icon:nth-child(1) {
+  color: gold;
+}
+.Moderate > .icon {
+  color: gold;
+}
+.Moderate > .icon:nth-child(3) {
+  color: grey;
+}
+.Expensive > .icon {
+  color: gold;
+}
+
+.restaurant-nearbyListing > div {
+  color: black;
+  font-family: "NunitoBold";
+  margin-bottom: 15px;
+}
+.restaurant-nearbyRestaurant {
+  width: 100%;
+  height: 120px;
+  border-top: 1px solid lightgrey;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.restaurant-nearbyRestaurant:hover {
+  background-color: rgba(124, 78, 195, 0.5);
+}
+.restaurant-nearbyRestaurant img {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+  /* padding: auto; */
+}
+.restaurant-nearbyRestaurant > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  height: 75%;
+}
+.nearbyRestaurant-name {
+  font-size: 1.1rem;
+  font-family: "NunitoBold";
+}
+.nearbyRestaurant-address {
+  font-size: 0.9rem;
+  color: grey;
+}

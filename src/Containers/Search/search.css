@@ -1,0 +1,148 @@
+.searchPage {
+  display: flex;
+}
+.searchMap,
+.searchResults {
+  height: Calc(100vh - 60px);
+  width: 50%;
+  position: fixed;
+  top: 60px;
+  background-color: rgb(255, 255, 255);
+}
+.searchResults {
+  left: 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-header {
+  width: 100%;
+  padding: 10px;
+}
+.search-numberOfResults {
+  display: flex;
+  align-items: flex-end;
+}
+.search-searchBar {
+  width: 100%;
+  margin-bottom: 10px;
+  /* background-color: lightpink; */
+}
+.search-filters {
+  height: 50px;
+  width: 100%;
+  background-color: #7c4ec2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+}
+.search-card {
+  height: 250px;
+  width: Calc(((100% - 12%) / 3));
+  margin: 20px 2%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: lightgray solid 1px;
+  color: black;
+}
+.search-card:hover {
+  background-color: #7c4ec25e;
+  z-index: 99;
+}
+.search-card img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  box-sizing: border-box;
+}
+
+.searchCard-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  font-family: "NunitoBold";
+  font-style: italic;
+  text-align: center;
+  height: 2rem;
+}
+.searchCard-rating {
+  color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.searchCard-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* MAP AND MARKERS */
+.searchMap {
+  right: 0;
+}
+.searchPage-marker {
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+.searchPage-marker:hover {
+  z-index: 9;
+}
+.searchPage-marker > .marker-detailArea {
+  background-color: white;
+  height: 200px;
+  width: 280px;
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  right: -120px;
+  z-index: 20;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.8);
+  flex-direction: column;
+  align-items: center;
+}
+.searchPage-marker > .marker-detailArea > div:last-child {
+  height: 25px;
+  width: 25px;
+  border-bottom: grey solid 1px;
+  border-right: grey solid 1px;
+  box-sizing: border-box;
+  transform: rotate(45deg);
+  background-color: white;
+  position: absolute;
+  bottom: -13px;
+  left: Calc(50% - 10px);
+}
+.searchPage-marker:hover > .marker-detailArea {
+  display: flex;
+}
+
+.marker-detailArea img {
+  width: 280px;
+  height: 100px;
+  object-fit: cover;
+}
+.marker-detailArea .marker-name {
+  color: #7c4ec2;
+  font-family: "NunitoBold";
+  font-size: 1.2rem;
+  padding-top: 20px;
+}
+.marker-detailArea .marker-address {
+  color: black;
+}
+.marker-rating {
+  color: gold;
+  display: flex;
+}

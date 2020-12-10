@@ -1,0 +1,121 @@
+/* SIGNUP */
+/* SIGNUP */
+.signup {
+  display: flex;
+}
+.picture img {
+  width: 34vw;
+  height: Calc(100vh - 100px);
+  object-fit: cover;
+}
+.formularSignUp {
+  width: 100%;
+  min-height: Calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.formSignup {
+  font-family: "NunitoBold";
+  line-height: 1.5rem;
+  width: 95%;
+}
+.formularSignUp input,
+.formularSignUp select {
+  height: 35px;
+  padding-left: 10px;
+  font-family: "Nunito";
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.formTitle {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 15px;
+}
+.socialNetwork {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin: 15px;
+  border: 2px solid black;
+}
+.line1 {
+  display: flex;
+  width: 100%;
+}
+.line1 > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.line1 > div:first-child {
+  margin-right: 15px;
+}
+.line2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.map {
+  width: 100%;
+  height: 400px;
+  background-color: #3535c0;
+  position: relative;
+}
+.map > .loadingCard {
+  position: absolute;
+  top: Calc(50% - 30px);
+  left: Calc(50% - 30px);
+}
+.mapMarker {
+  color: #7c4ec3;
+  font-size: 35px;
+}
+.questions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.questions > div {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 165px;
+}
+.questions > div > div {
+  border: 2px grey solid;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.regular {
+  font-family: "Nunito";
+}
+.bold {
+  font-family: "NunitoBold";
+}
+.registerButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+.policy {
+  font-family: "Nunito";
+  font-size: 12px;
+  align-self: flex-start;
+}
+.formSignup > input:last-child {
+  width: 100%;
+  height: 50px;
+  background-color: #7c4ec3;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}

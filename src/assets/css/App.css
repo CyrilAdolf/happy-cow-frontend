@@ -1,0 +1,32 @@
+/* COMMON RULES */
+/* COMMON RULES */
+:root {
+  --colorPurple: #7c4ec3;
+  --colorPurpleHover: #906acd;
+}
+body {
+  font-family: "Nunito";
+}
+div {
+  box-sizing: border-box;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+button:focus,
+input:focus {
+  outline: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+Link:visited {
+  text-decoration: none;
+  color: white;
+}
+.hidden {
+  display: none;
+}

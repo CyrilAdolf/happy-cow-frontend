@@ -1,0 +1,144 @@
+/* MODAL SIGNIN */
+/* MODAL SIGNIN */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formularSignIn {
+  width: 70%;
+  height: 50%;
+  max-width: 720px;
+  min-height: 620px;
+  background-color: #fff;
+  position: relative;
+}
+.signInHeader {
+  height: 100px;
+  border-bottom: solid black 1px;
+  margin-top: 15px;
+  /* margin-bottom: 15px; */
+}
+.signInHeader p {
+  font-size: 20px;
+  text-align: center;
+}
+.signInHeader > div {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 10px auto;
+}
+.appLink {
+  height: 40px;
+  width: 130px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+.mainSignIn {
+  display: flex;
+  height: Calc(100% - 100px);
+  width: 100%;
+}
+.rightColumn {
+  height: Calc(100% - 15px);
+  flex: 1;
+  background-size: cover;
+  background-position-x: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 100px 0; */
+}
+.rightColumn > div {
+  background-color: #fff;
+  height: 50px;
+  width: 50%;
+}
+.rightColumn > div:first-child {
+  margin-top: 150px;
+}
+.rightColumn > div:last-child {
+  margin-bottom: 150px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  flex: 1;
+}
+.form > input[type="submit"] {
+  cursor: pointer;
+  background-color: #7c4ec3;
+  color: white;
+  width: 90%;
+  height: 50px;
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+}
+.titleSignIn {
+  font-size: 25px;
+  text-align: center;
+}
+.form div {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.form input {
+  height: 40px;
+  width: 100%;
+}
+/* .formularSignIn input {
+  height: 40px;
+  width: 100%;
+} */
+#cut {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#cut span {
+  text-align: center;
+  padding: 10px;
+}
+#cut > div {
+  border-top: black solid 1px;
+}
+
+.exit-modal {
+  cursor: pointer;
+  position: absolute;
+  top: 120px;
+  right: 20px;
+  background-color: #fff;
+  padding: 9px;
+  border-radius: 2px;
+  font-weight: 900;
+}
+.toRegister {
+  background-color: black;
+  width: 90%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}

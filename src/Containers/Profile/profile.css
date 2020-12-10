@@ -1,0 +1,87 @@
+.profilePage {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.profilePage > div {
+  width: 100%;
+}
+.profilePage form > div:first-child {
+  padding: 20px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.profilePage .profile-avatar {
+  width: 50%;
+}
+.profilePage .profile-avatar img {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: black 1px solid;
+}
+.avatar-update {
+  border: #7c4ec2 solid 2px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.profile-avatar .icon {
+  color: #7c4ec2;
+}
+.avatar-update:hover {
+  background-color: #7c4ec2;
+}
+.avatar-update:hover .icon {
+  color: white;
+}
+.profilePage form {
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
+.profile-inputs {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.profile-inputs > div {
+  margin-bottom: 20px;
+}
+.profile-inputs > div > span {
+  display: inline-block;
+  width: 150px;
+}
+.profile-newsletter div {
+  display: inline-block;
+}
+.profile-newsletter > div > div {
+  cursor: pointer;
+  width: 100px;
+}
+.profile-inputs > div:last-child {
+  align-self: center;
+}
+.profile-inputs button {
+  width: 200px;
+  height: 40px;
+  border: #7c4ec2 2px solid;
+  color: #7c4ec2;
+  border-radius: 25px;
+  background-color: #fff;
+  font-size: 1.4rem;
+}
+.profile-inputs button:hover {
+  background-color: #7c4ec2;
+  color: white;
+  cursor: pointer;
+}
