@@ -45,15 +45,18 @@ const SignUp = ({ setSignUp, setUserConnect }) => {
     if (agreeTerms) {
       const location = [lat, lng];
       try {
-        const response = await axios.post("http://localhost:3100/user/signup", {
-          email,
-          username,
-          password,
-          location,
-          veganStatus,
-          birth,
-          newsletter,
-        });
+        const response = await axios.post(
+          "https://happy-cow-ca.herokuapp.com/user/signup",
+          {
+            email,
+            username,
+            password,
+            location,
+            veganStatus,
+            birth,
+            newsletter,
+          }
+        );
         console.log(response.data);
         setUserConnect(response.data);
         alert("Registration succeeded !!");
@@ -156,7 +159,10 @@ const SignUp = ({ setSignUp, setUserConnect }) => {
 
           <div className="line2">
             Your Home City
-            <input type="text" placeholder="Not Available for now" />
+            <input
+              type="text"
+              placeholder="Auto complete isn't available for now"
+            />
             <span style={{ fontFamily: "Nunito", fontSize: 12 }}>
               Publicly displayed on profile and used to introduce you to nearby
               restaurants. (examples: "Los Angeles, California" or "Paris,

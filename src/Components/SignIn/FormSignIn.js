@@ -13,17 +13,22 @@ const FormSignIn = ({ setSignIn, setUserConnect }) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3100/user/signin", {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://happy-cow-ca.herokuapp.com/user/signin",
+        {
+          email,
+          password,
+        }
+      );
       console.log(response.data);
       setUserConnect(response.data);
       setSignIn(false);
       // REDIRECT
       history.push("/");
+      alert("Successfully logged in!!");
     } catch (error) {
       console.log(error.message);
+      alert("An error occured, you're not logged in");
     }
   };
 

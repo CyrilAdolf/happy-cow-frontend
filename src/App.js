@@ -19,7 +19,6 @@ import SignUp from "./Containers/SignUp/SignUp";
 
 // FONTAWESOME LIBRARY
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faSearch,

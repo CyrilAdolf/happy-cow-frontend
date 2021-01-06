@@ -62,7 +62,7 @@
 .map {
   width: 100%;
   height: 400px;
-  background-color: #3535c0;
+  background: linear-gradient(45deg, #8562ae, #ebf8e1);
   position: relative;
 }
 .map > .loadingCard {

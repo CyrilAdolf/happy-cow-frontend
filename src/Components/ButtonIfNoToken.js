@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const ButtonIfNoToken = ({ setSignIn }) => {
   return (
     <>
-      <div>
+      <Link to={{ pathname: "/search/location", state: { search: "75001" } }}>
         <FontAwesomeIcon icon="search" className="icon" />
-      </div>
+      </Link>
       <Link to="/" onClick={() => setSignIn(true)}>
         Add Listing
       </Link>

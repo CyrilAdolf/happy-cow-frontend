@@ -27,7 +27,7 @@ const Search = ({ ratingfunction }) => {
       const fetchData = async () => {
         try {
           const response = await axios.post(
-            `http://localhost:3100/searchbar?location=${location.state.search}`
+            `https://happy-cow-ca.herokuapp.com/searchbar?location=${location.state.search}`
           );
           console.log(response.data);
           setSearchData(response.data);
@@ -41,9 +41,8 @@ const Search = ({ ratingfunction }) => {
   }, [location.state.search]);
 
   // IN THIS CASE LAT AND LNG AREN'T DYNAMIC VALUES
-  let lat = 48.85837;
-  let lng = 2.294481;
-
+  let lat = 48.864824;
+  let lng = 2.334595;
   return isLoading ? (
     <div>Chargement</div>
   ) : (
@@ -90,7 +89,7 @@ const Search = ({ ratingfunction }) => {
             lat: lat,
             lng: lng,
           }}
-          defaultZoom={12}
+          defaultZoom={14}
         >
           {searchData.map((restaurant, i) => {
             // MARKER

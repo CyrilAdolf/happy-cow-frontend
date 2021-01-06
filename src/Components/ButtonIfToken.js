@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const ButtonIfToken = ({ setUserConnect }) => {
   return (
     <>
-      <div>
+      <Link to={{ pathname: "/search/location", state: { search: "75001" } }}>
         <FontAwesomeIcon icon="search" className="icon" />
-      </div>
+      </Link>
       <Link to="/addRestaurant">Add Listing</Link>
       <Link to="/profile">My Profile</Link>
       <Link to="/" onClick={() => setUserConnect(null)}>

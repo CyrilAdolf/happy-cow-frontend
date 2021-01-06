@@ -22,6 +22,7 @@
   padding: 14px 10px;
   cursor: pointer;
   position: relative;
+  z-index: 5;
 }
 .navigation ul {
   display: none;
@@ -59,8 +60,16 @@
   border-radius: 10px;
   cursor: pointer;
 }
+.buttons > a:first-child {
+  border: none;
+  padding-right: 15px;
+}
+.buttons > a:first-child:hover {
+  font-size: 25px;
+  padding-right: 6px;
+}
 .buttons div:hover:not(:first-child),
-.buttons a:hover {
+.buttons a:hover:not(:first-child) {
   background-color: #7c4ec3;
   color: white;
 }

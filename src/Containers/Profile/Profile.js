@@ -26,9 +26,12 @@ const Profile = ({ userId, token }) => {
   useEffect(() => {
     const fetchProfile = async () => {
       // console.log("requete go");
-      const response = await axios.post("http://localhost:3100/user/profile", {
-        _id: userId,
-      });
+      const response = await axios.post(
+        "https://happy-cow-ca.herokuapp.com/user/profile",
+        {
+          _id: userId,
+        }
+      );
       setUsername(response.data.account.username);
       setEmail(response.data.email);
       setAvatar(response.data.account.avatar);
@@ -57,7 +60,7 @@ const Profile = ({ userId, token }) => {
     console.log("token : ", token);
 
     const response = await axios.post(
-      "http://localhost:3100/user/updateprofile",
+      "https://happy-cow-ca.herokuapp.com/user/updateprofile",
       formData,
       {
         headers: {
@@ -74,6 +77,7 @@ const Profile = ({ userId, token }) => {
     setLng(response.data.lng);
     setVeganStatus(response.data.veganStatus);
     setNewsletter(response.data.newsletter);
+    alert("SUCCESS !! Your profile has been updated !");
   };
 
   return (
@@ -86,16 +90,19 @@ const Profile = ({ userId, token }) => {
         >
           <div className="profile-avatar">
             <img src={avatar} alt="user avatar" />
-            {/* SWITCH TO DROPZONE TO STYLE */}
-            {/* SWITCH TO DROPZONE TO STYLE */}
-            <input
-              className="avatar-update"
-              type="file"
-              onChange={(event) => {
-                setFile(event.target.files[0]);
-              }}
-            ></input>
-            <FontAwesomeIcon icon="camera" className="icon" />
+            <div>
+              <label for="file-input">
+                <FontAwesomeIcon icon="camera" className="icon" />
+              </label>
+              <input
+                id="file-input"
+                className="avatar-update"
+                type="file"
+                onChange={(event) => {
+                  setFile(event.target.files[0]);
+                }}
+              ></input>
+            </div>
           </div>
           <div className="profile-inputs">
             <div className="profile-username">
@@ -189,7 +196,7 @@ const Profile = ({ userId, token }) => {
                   }}
                   className={newsletter ? "bold" : "regular"}
                 >
-                  YES, please
+                  Yes, please
                 </div>
                 <div
                   onClick={() => {

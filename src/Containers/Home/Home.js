@@ -37,9 +37,9 @@ const Home = ({ ratingfunction }) => {
     if (!isLoading) {
       const fetchdata = async () => {
         const response = await axios.get(
-          `http://localhost:3100/aroundme?lat=${48.85837}&lng=${2.294481}&limit=${10}&skip=${0}`
+          `https://happy-cow-ca.herokuapp.com/aroundme?lat=${48.85837}&lng=${2.294481}&limit=${10}&skip=${0}`
         );
-        console.log(response.data);
+        // console.log(response.data);
         setRestaurants(response.data);
         setIsLoading2(false);
       };
@@ -57,10 +57,6 @@ const Home = ({ ratingfunction }) => {
 
   return (
     <div className="homePage">
-      {/* <div className="banner">
-        <div>Find Vegan Restaurants Nearby</div>
-        <SearchBar />
-      </div> */}
       <div className="wavy">
         <div>Find Vegan Restaurants Nearby</div>
         <SearchBar />

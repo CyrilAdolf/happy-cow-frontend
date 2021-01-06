@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import Carousel from "react-elastic-carousel";
 
+import OpeningHours from "../../Components/OpeningHours";
 import GoogleMap from "../../Components/GoogleMap";
 
 // TYPE LOGO
@@ -27,9 +28,9 @@ const Restaurant = ({ ratingfunction }) => {
   useEffect(() => {
     const fetchNearby = async () => {
       try {
-        console.log("try request");
+        // console.log("try request");
         const response = await axios.post(
-          `http://localhost:3100/restaurant/nearby`,
+          `https://happy-cow-ca.herokuapp.com/restaurant/nearby`,
           {
             id: restaurant.nearbyPlacesIds,
           }
@@ -43,8 +44,10 @@ const Restaurant = ({ ratingfunction }) => {
     fetchNearby();
   }, [restaurant]);
 
+  // CREATE ARRAY FOR STARS-RATING
   const rating = ratingfunction(restaurant);
 
+  // ASSIGN LOGO AND COLOR REGARDING RESTAURANTS TYPE
   const type = restaurant.type;
   let color = "";
   let logoType;
@@ -77,8 +80,8 @@ const Restaurant = ({ ratingfunction }) => {
   // CAROUSEL SETTINGS
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 240, itemsToShow: 2 },
-    { width: 480, itemsToShow: 3 },
+    { width: 230, itemsToShow: 2 },
+    { width: 460, itemsToShow: 3 },
   ];
 
   return (
@@ -126,13 +129,7 @@ const Restaurant = ({ ratingfunction }) => {
             Europe/ France / <span>Paris</span>
           </div>
           <div className="mainInfo">
-            <div>
-              <FontAwesomeIcon icon="clock" className="icon" />
-              <div>
-                <span style={{ fontFamily: "NunitoBold" }}>HOURS</span> <br />
-                Missing informations
-              </div>
-            </div>
+            <OpeningHours restaurant={restaurant} />
             <div>
               <FontAwesomeIcon icon="phone-alt" className="icon" />
               <div>
@@ -162,10 +159,10 @@ const Restaurant = ({ ratingfunction }) => {
               </div>
             </div>
             <div className="numberPhotos">
-              {restaurant.pictures.length !== 0
-                ? restaurant.pictures.length
-                : "1"}{" "}
-              photo(s)
+              {restaurant.pictures.length >= 2
+                ? restaurant.pictures.length + " photos"
+                : "1 photo"}
+              {/* photo(s) */}
               <FontAwesomeIcon icon="camera" className="icon" />
             </div>
           </div>

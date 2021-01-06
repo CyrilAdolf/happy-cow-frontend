@@ -22,19 +22,34 @@
   border: black 1px solid;
 }
 .avatar-update {
-  border: #7c4ec2 solid 2px;
+  /* border: #7c4ec2 solid 2px;
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
+  */
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 .profile-avatar .icon {
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
   color: #7c4ec2;
+  font-size: 40px;
+  padding: 10px;
+  border: #7c4ec2 dashed 1px;
+  border-radius: 10px;
 }
-.avatar-update:hover {
+.profile-avatar > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-avatar input {
+  display: none;
+}
+.profile-avatar .icon:hover {
+  border-radius: 10px;
+  color: white;
   background-color: #7c4ec2;
 }
 .avatar-update:hover .icon {
@@ -50,8 +65,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 15px;
+  align-items: flex-start;
+  padding: 15px 100px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 .profile-inputs > div {
@@ -66,7 +81,8 @@
 }
 .profile-newsletter > div > div {
   cursor: pointer;
-  width: 100px;
+  margin-right: 20px;
+  /* width: 100px; */
 }
 .profile-inputs > div:last-child {
   align-self: center;
