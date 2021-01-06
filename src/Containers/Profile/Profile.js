@@ -40,6 +40,13 @@ const Profile = ({ userId, token }) => {
       setLng(response.data.account.location.lng);
       setVeganStatus(response.data.account.veganStatus);
       // NEWSLETTER IS NOT FETCH, WE SET IT TO TRUE BY DEFAULT
+      console.log("status : ", response.status);
+      console.log("response : ", response);
+      if (response.status === 200) {
+        alert("Your profile has been updated successfully.");
+      } else {
+        alert("An error occured, your profile has not been updated.");
+      }
     };
     fetchProfile();
   }, [userId]);
