@@ -27,9 +27,9 @@ const SignIn = ({ setSignIn, setUserConnect }) => {
             className="rightColumn"
             style={{ backgroundImage: `url(${PictureSignIn})` }}
           >
-            <div className="social">Facebook</div>
+            {/* <div className="social">Facebook</div>
             <div className="social">Google</div>
-            <div className="social">Apple</div>
+            <div className="social">Apple</div> */}
           </div>
         </div>
         <div className="exit-modal" onClick={() => setSignIn(false)}>

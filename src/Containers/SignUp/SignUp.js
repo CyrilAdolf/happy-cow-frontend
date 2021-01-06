@@ -79,11 +79,11 @@ const SignUp = ({ setSignUp, setUserConnect }) => {
         <div className="formTitle">
           Join the largest vegan and vegetarian community in the world
         </div>
-        <div className="socialNetwork">
+        {/* <div className="socialNetwork">
           <div>Facebook</div>
           <div>Google</div>
           <div>Apple</div>
-        </div>
+        </div> */}
         <form className="formSignup">
           <div className="line1">
             <div>

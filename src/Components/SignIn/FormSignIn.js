@@ -4,9 +4,9 @@ import { useHistory, Link } from "react-router-dom";
 
 const FormSignIn = ({ setSignIn, setUserConnect }) => {
   // STATES
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("test@test.com");
   // const [username, setUsername] = useState("");
-  const [password, setpassword] = useState("");
+  const [password, setpassword] = useState("azerty");
 
   const history = useHistory();
 
@@ -20,7 +20,7 @@ const FormSignIn = ({ setSignIn, setUserConnect }) => {
           password,
         }
       );
-      console.log(response.data);
+      // console.log(response.data);
       setUserConnect(response.data);
       setSignIn(false);
       // REDIRECT
