@@ -1,4 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is published online: https://awesome-pike-bdd259.netlify.app/ (Optimized for Google Chrome browser)
+
+The following functionnalities are available on this website:
+
+Loggin/Signup
+Users profile update
+Research bar
+Display markers on GoogleMap
+
+
 
 ## Available Scripts
 
